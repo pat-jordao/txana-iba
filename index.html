@@ -4,11 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sacred Touch Travels 2026 — Txana Ibã · Huni Kuin</title>
-<meta name="description" content="Sacred Touch Travels waves a tour across The Balkan with Txana Ibã, the Huni Kuin people and the prayers of deep Amazon forest to Europe from August to October 2026.">
+<meta name="description" content="Sacred prayer circles, forest medicine and worldwide native spiritual trips. Sacred Touch Travels brings Txana Ibã and the Huni Kuin people from the deep Amazon forest to Europe, August–October 2026 — an invisible temple in the eternal presence.">
 <!-- Open Graph / WhatsApp preview -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Sacred Touch Travels 2026 — Txana Ibã · Huni Kuin">
-<meta property="og:description" content="Sacred Touch Travels waves a tour across The Balkan with Txana Ibã, the Huni Kuin people and the prayers of deep Amazon forest of the Amazon to Europe from August to October 2026.">
+<meta property="og:description" content="Sacred prayer circles, forest medicine and worldwide native spiritual trips. Sacred Touch Travels brings Txana Ibã and the Huni Kuin people from the deep Amazon forest to Europe, August–October 2026 — an invisible temple in the eternal presence.">
 <meta property="og:url" content="https://join.sacredtouchtravels.workers.dev/txana-iba.html">
 <meta property="og:image" content="https://join.sacredtouchtravels.workers.dev/FLYER.png">
 <meta property="og:image:width" content="800">
@@ -153,9 +153,53 @@
   .slot .status.open{color:var(--ochre);cursor:pointer;transition:.2s}
   .slot .status.open:hover{border-color:var(--clay);color:var(--clay-bright)}
   .sched-note{max-width:860px;margin:26px auto 0;font-size:.95rem;color:var(--bone-dim);text-align:center;font-style:italic;font-family:var(--display)}
+  /* open-dates block: single header + list of dates */
+  .open-block{max-width:860px;margin:0 auto}
+  .ob-head{display:flex;flex-direction:column;gap:6px;padding:24px 6px 18px;border-bottom:1px solid var(--line);margin-bottom:20px}
+  .ob-head .ob-title{font-family:var(--display);font-style:italic;font-weight:500;font-size:clamp(1.4rem,3vw,1.9rem);color:var(--clay-bright);line-height:1}
+  .ob-head .ob-place{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:700;color:var(--ochre)}
+  .ob-dates{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .ob-row{display:flex;flex-direction:column;align-items:flex-start;gap:16px;padding:22px 22px;border:1px solid var(--line);border-radius:5px;background:var(--jungle);text-decoration:none;transition:border-color .2s,background .2s}
+  .ob-row:hover{border-color:var(--clay);background:rgba(184,100,60,.06)}
+  .ob-row .ob-date{font-family:var(--display);font-style:italic;font-weight:500;font-size:1.45rem;color:var(--bone);line-height:1}
+  .ob-row .ob-cta{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.14em;font-size:11px;font-weight:700;color:var(--ochre);display:inline-flex;align-items:center;gap:7px;white-space:nowrap;transition:color .2s;margin-top:auto}
+  .ob-row:hover .ob-cta{color:var(--clay-bright)}
+  .ob-row .ob-cta .arr{transition:transform .2s}
+  .ob-row:hover .ob-cta .arr{transform:translateX(3px)}
+  /* weekly structure card */
+  .weekplan{max-width:860px;margin:64px auto 0}
+  .weekplan .wp-head{text-align:center;margin-bottom:40px}
+  .weekplan .wp-head .kicker{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.28em;font-size:12px;color:var(--ochre);font-weight:700;margin-bottom:16px}
+  .weekplan .wp-head h3{font-family:var(--display);font-weight:400;font-size:clamp(1.5rem,3.4vw,2.2rem);line-height:1.1;color:var(--bone);margin-bottom:14px}
+  .weekplan .wp-head h3 em{font-style:italic;color:var(--clay-bright)}
+  .weekplan .wp-head p{color:var(--bone-dim);font-size:1rem;line-height:1.6;max-width:600px;margin:0 auto}
+  .wp-days{display:grid;gap:0;border:1px solid var(--line);border-radius:6px;overflow:hidden;background:var(--jungle)}
+  .wp-day{border-bottom:1px solid var(--line)}
+  .wp-day:last-child{border-bottom:0}
+  .wp-daylabel{background:var(--jungle-2);padding:15px 26px;display:flex;flex-direction:row;align-items:center;justify-content:center;gap:12px;border-bottom:1px solid var(--line)}
+  .wp-daylabel .di{width:20px;height:20px;color:var(--ochre);opacity:.85;flex:none}
+  .wp-daylabel .di svg{width:100%;height:100%;display:block;stroke:currentColor;fill:none;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+  .wp-daylabel .dn{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.22em;font-size:13px;font-weight:700;color:var(--clay-bright)}
+  .wp-events{padding:20px 26px;display:flex;flex-direction:column;gap:18px}
+  .wp-ev{display:grid;grid-template-columns:70px 1fr auto;gap:20px;align-items:baseline}
+  .wp-ev .wt{font-family:var(--narrow);text-transform:uppercase;font-weight:700;font-size:11px;letter-spacing:.1em;color:var(--ochre);white-space:nowrap}
+  .wp-ev .wd{color:var(--bone);font-family:var(--display);font-size:1.08rem;line-height:1.3;font-weight:400}
+  .wp-ev .wd small{display:block;font-family:var(--narrow);text-transform:uppercase;letter-spacing:.14em;font-size:9.5px;color:var(--bone-dim);margin-top:5px;font-weight:600}
+  .wp-ev .wp-price{font-family:var(--narrow);font-weight:700;font-size:11.5px;letter-spacing:.04em;color:var(--bone);background:rgba(184,100,60,.14);border:1px solid var(--line);border-radius:3px;padding:4px 10px;white-space:nowrap}
+  .wp-total{margin-top:22px;display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px;text-align:center;padding:22px;border:1px solid var(--clay);border-radius:6px;background:rgba(184,100,60,.1)}
+  .wp-total .lbl{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.2em;font-size:12px;font-weight:700;color:var(--bone-dim)}
+  .wp-total .amt{font-family:var(--display);font-style:italic;font-weight:500;font-size:1.6rem;color:var(--clay-bright)}
+  @media(max-width:820px){
+    .ob-dates{grid-template-columns:repeat(2,1fr)}
+  }
   @media(max-width:680px){
     .slot{grid-template-columns:1fr auto;gap:6px 16px}
     .slot .date{grid-column:1/-1;font-size:1.1rem}
+    .wp-daylabel{padding:14px 20px}
+    .wp-events{padding:16px 20px}
+    .wp-ev{grid-template-columns:1fr auto;gap:5px 14px}
+    .wp-ev .wt{grid-column:1/-1}
+    .ob-dates{grid-template-columns:1fr}
   }
 
   /* Ibã message */
@@ -268,6 +312,7 @@
   footer .brand img.logo{height:40px;margin-bottom:14px}
   footer .brand .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
   footer p{color:var(--bone-dim);font-size:.92rem;max-width:300px}
+  footer p.footer-creed{margin-top:16px;max-width:320px;font-family:var(--display);font-style:italic;font-size:.9rem;line-height:1.55;color:var(--bone-dim);opacity:.85;border-top:1px solid var(--line);padding-top:16px}
   footer .col h4{font-family:var(--narrow);text-transform:uppercase;letter-spacing:.18em;font-size:12px;color:var(--ochre);margin-bottom:16px;font-weight:700}
   footer .col a{display:block;color:var(--bone-dim);font-size:.95rem;margin-bottom:9px;transition:color .2s}
   footer .col a:hover{color:var(--clay-bright)}
@@ -735,48 +780,90 @@
       <div class="slot confirmed">
         <div class="date">18–25 Aug</div>
         <div class="where"><span class="city">Thessaloniki</span><span class="country" data-lang="en">Greece</span><span class="country" data-lang="pt">Grécia</span><span class="country" data-lang="sl">Grčija</span></div>
-        <div class="status"><span data-lang="en">Confirmed</span><span data-lang="pt">Confirmado</span><span data-lang="sl">Potrjeno</span></div>
+        <a class="status open" href="mailto:sacredtouchtravels@gmail.com?subject=Retreat%20with%20Txana%20Iba%CC%83%20%E2%80%94%2018-25%20Aug%20Thessaloniki"><span data-lang="en">Get in contact</span><span data-lang="pt">Entrar em contato</span><span data-lang="sl">Stopite v stik</span></a>
       </div>
       <div class="slot confirmed">
         <div class="date">25–31 Aug</div>
         <div class="where"><span class="city">Crete</span><span class="country" data-lang="en">Greece</span><span class="country" data-lang="pt">Grécia</span><span class="country" data-lang="sl">Grčija</span></div>
-        <div class="status"><span data-lang="en">Confirmed</span><span data-lang="pt">Confirmado</span><span data-lang="sl">Potrjeno</span></div>
+        <a class="status open" href="mailto:sacredtouchtravels@gmail.com?subject=Retreat%20with%20Txana%20Iba%CC%83%20%E2%80%94%2025-31%20Aug%20Crete"><span data-lang="en">Get in contact</span><span data-lang="pt">Entrar em contato</span><span data-lang="sl">Stopite v stik</span></a>
       </div>
-      <div class="slot">
-        <div class="date">2–9 Sep</div>
-        <div class="where"><span class="city" data-lang="en">Open date</span><span class="city" data-lang="pt">Data aberta</span><span class="city" data-lang="sl">Prosti datum</span><span class="country" data-lang="en">Available across Europe</span><span class="country" data-lang="pt">Disponível pela Europa</span><span class="country" data-lang="sl">Na voljo po Evropi</span></div>
-        <a class="status open" href="mailto:sacredtouchtravels@gmail.com?subject=Retreat%20with%20Txana%20Iba%CC%83%20%E2%80%94%202-9%20Sep"><span data-lang="en">Get in contact</span><span data-lang="pt">Entrar em contato</span><span data-lang="sl">Stopite v stik</span></a>
+    </div>
+
+    <div class="open-block reveal">
+      <div class="ob-head">
+        <span class="ob-title" data-lang="en">Open dates</span><span class="ob-title" data-lang="pt">Datas aberta</span><span class="ob-title" data-lang="sl">Prosti datum</span>
+        <span class="ob-place" data-lang="en">Available across Europe</span><span class="ob-place" data-lang="pt">Disponível pela Europa</span><span class="ob-place" data-lang="sl">Na voljo po Evropi</span>
       </div>
-      <div class="slot">
-        <div class="date">9–16 Sep</div>
-        <div class="where"><span class="city" data-lang="en">Open date</span><span class="city" data-lang="pt">Data aberta</span><span class="city" data-lang="sl">Prosti datum</span><span class="country" data-lang="en">Available across Europe</span><span class="country" data-lang="pt">Disponível pela Europa</span><span class="country" data-lang="sl">Na voljo po Evropi</span></div>
-        <a class="status open" href="mailto:sacredtouchtravels@gmail.com?subject=Retreat%20with%20Txana%20Iba%CC%83%20%E2%80%94%209-16%20Sep"><span data-lang="en">Get in contact</span><span data-lang="pt">Entrar em contato</span><span data-lang="sl">Stopite v stik</span></a>
-      </div>
-      <div class="slot">
-        <div class="date">16–23 Sep</div>
-        <div class="where"><span class="city" data-lang="en">Open date</span><span class="city" data-lang="pt">Data aberta</span><span class="city" data-lang="sl">Prosti datum</span><span class="country" data-lang="en">Available across Europe</span><span class="country" data-lang="pt">Disponível pela Europa</span><span class="country" data-lang="sl">Na voljo po Evropi</span></div>
-        <a class="status open" href="mailto:sacredtouchtravels@gmail.com?subject=Retreat%20with%20Txana%20Iba%CC%83%20%E2%80%94%2016-23%20Sep"><span data-lang="en">Get in contact</span><span data-lang="pt">Entrar em contato</span><span data-lang="sl">Stopite v stik</span></a>
-      </div>
-      <div class="slot">
-        <div class="date">23–30 Sep</div>
-        <div class="where"><span class="city" data-lang="en">Open date</span><span class="city" data-lang="pt">Data aberta</span><span class="city" data-lang="sl">Prosti datum</span><span class="country" data-lang="en">Available across Europe</span><span class="country" data-lang="pt">Disponível pela Europa</span><span class="country" data-lang="sl">Na voljo po Evropi</span></div>
-        <a class="status open" href="mailto:sacredtouchtravels@gmail.com?subject=Retreat%20with%20Txana%20Iba%CC%83%20%E2%80%94%2023-30%20Sep"><span data-lang="en">Get in contact</span><span data-lang="pt">Entrar em contato</span><span data-lang="sl">Stopite v stik</span></a>
-      </div>
-      <div class="slot">
-        <div class="date">1–6 Oct</div>
-        <div class="where"><span class="city" data-lang="en">Open date</span><span class="city" data-lang="pt">Data aberta</span><span class="city" data-lang="sl">Prosti datum</span><span class="country" data-lang="en">Available across Europe</span><span class="country" data-lang="pt">Disponível pela Europa</span><span class="country" data-lang="sl">Na voljo po Evropi</span></div>
-        <a class="status open" href="mailto:sacredtouchtravels@gmail.com?subject=Retreat%20with%20Txana%20Iba%CC%83%20%E2%80%94%201-6%20Oct"><span data-lang="en">Get in contact</span><span data-lang="pt">Entrar em contato</span><span data-lang="sl">Stopite v stik</span></a>
-      </div>
-      <div class="slot">
-        <div class="date">6–13 Oct</div>
-        <div class="where"><span class="city" data-lang="en">Open date</span><span class="city" data-lang="pt">Data aberta</span><span class="city" data-lang="sl">Prosti datum</span><span class="country" data-lang="en">Available across Europe</span><span class="country" data-lang="pt">Disponível pela Europa</span><span class="country" data-lang="sl">Na voljo po Evropi</span></div>
-        <a class="status open" href="mailto:sacredtouchtravels@gmail.com?subject=Retreat%20with%20Txana%20Iba%CC%83%20%E2%80%94%206-13%20Oct"><span data-lang="en">Get in contact</span><span data-lang="pt">Entrar em contato</span><span data-lang="sl">Stopite v stik</span></a>
+      <div class="ob-dates">
+        <a class="ob-row" href="mailto:sacredtouchtravels@gmail.com?subject=Retreat%20with%20Txana%20Iba%CC%83%20%E2%80%94%202-9%20Sep"><span class="ob-date">2–9 Sep</span><span class="ob-cta"><span data-lang="en">Get in contact</span><span data-lang="pt">Entrar em contato</span><span data-lang="sl">Stopite v stik</span><span class="arr">→</span></span></a>
+        <a class="ob-row" href="mailto:sacredtouchtravels@gmail.com?subject=Retreat%20with%20Txana%20Iba%CC%83%20%E2%80%94%209-16%20Sep"><span class="ob-date">9–16 Sep</span><span class="ob-cta"><span data-lang="en">Get in contact</span><span data-lang="pt">Entrar em contato</span><span data-lang="sl">Stopite v stik</span><span class="arr">→</span></span></a>
+        <a class="ob-row" href="mailto:sacredtouchtravels@gmail.com?subject=Retreat%20with%20Txana%20Iba%CC%83%20%E2%80%94%2016-23%20Sep"><span class="ob-date">16–23 Sep</span><span class="ob-cta"><span data-lang="en">Get in contact</span><span data-lang="pt">Entrar em contato</span><span data-lang="sl">Stopite v stik</span><span class="arr">→</span></span></a>
+        <a class="ob-row" href="mailto:sacredtouchtravels@gmail.com?subject=Retreat%20with%20Txana%20Iba%CC%83%20%E2%80%94%2023-30%20Sep"><span class="ob-date">23–30 Sep</span><span class="ob-cta"><span data-lang="en">Get in contact</span><span data-lang="pt">Entrar em contato</span><span data-lang="sl">Stopite v stik</span><span class="arr">→</span></span></a>
+        <a class="ob-row" href="mailto:sacredtouchtravels@gmail.com?subject=Retreat%20with%20Txana%20Iba%CC%83%20%E2%80%94%201-6%20Oct"><span class="ob-date">1–6 Oct</span><span class="ob-cta"><span data-lang="en">Get in contact</span><span data-lang="pt">Entrar em contato</span><span data-lang="sl">Stopite v stik</span><span class="arr">→</span></span></a>
+        <a class="ob-row" href="mailto:sacredtouchtravels@gmail.com?subject=Retreat%20with%20Txana%20Iba%CC%83%20%E2%80%94%206-13%20Oct"><span class="ob-date">6–13 Oct</span><span class="ob-cta"><span data-lang="en">Get in contact</span><span data-lang="pt">Entrar em contato</span><span data-lang="sl">Stopite v stik</span><span class="arr">→</span></span></a>
       </div>
     </div>
 
     <p class="sched-note reveal" data-lang="en">Each open date can become a full retreat — concert, ceremonies, healings and bazaar. Pick a week and get in contact for more information; we'll organize it with you.</p>
     <p class="sched-note reveal" data-lang="pt">Cada data aberta pode se tornar um retiro completo — concerto, cerimônias, curas e bazar. Escolha uma semana e entre em contato para mais informações; organizamos com você.</p>
     <p class="sched-note reveal" data-lang="sl">Vsak prosti datum lahko postane celovit umik — koncert, obredi, zdravljenja in bazar. Izberite teden in stopite v stik za več informacij; organizirali ga bomo z vami.</p>
+
+    <!-- weekly structure card -->
+    <div class="weekplan reveal">
+      <div class="wp-head">
+        <div class="kicker" data-lang="en">A week in the maloca</div><div class="kicker" data-lang="pt">Uma semana na maloca</div><div class="kicker" data-lang="sl">Teden v maloki</div>
+        <h3 data-lang="en">What a <em>Huni Kuin retreat</em> looks like</h3>
+        <h3 data-lang="pt">Como é um <em>retiro Huni Kuin</em></h3>
+        <h3 data-lang="sl">Kako izgleda <em>umik Huni Kuin</em></h3>
+        <p data-lang="en">Every retreat, in every country, follows the same rhythm. Here is the basic shape of a week — join a single ceremony or walk the whole path from Wednesday to Sunday.</p>
+        <p data-lang="pt">Cada retiro, em cada país, segue o mesmo ritmo. Esta é a estrutura básica de uma semana — participe de uma única cerimônia ou percorra o caminho inteiro, de quarta a domingo.</p>
+        <p data-lang="sl">Vsak umik, v vsaki državi, sledi istemu ritmu. To je osnovna oblika tedna — pridruži se posamezni obredni večeru ali prehodi celotno pot od srede do nedelje.</p>
+      </div>
+
+      <div class="wp-days">
+        <div class="wp-day">
+          <div class="wp-daylabel"><div><span class="dn" data-lang="en">Wednesday</span><span class="dn" data-lang="pt">Quarta</span><span class="dn" data-lang="sl">Sreda</span></div><span class="di"><svg viewBox="0 0 24 24"><path d="M11 20c0-6 3-11 8-13-1 6-4 11-8 13z"/><path d="M11 20c-2-4-2-8 0-12"/></svg></span></div>
+          <div class="wp-events">
+            <div class="wp-ev"><span class="wt">10—14h</span><span class="wd" data-lang="en">Individual healings<small>one-on-one</small></span><span class="wd" data-lang="pt">Curas individuais<small>atendimento pessoal</small></span><span class="wd" data-lang="sl">Individualna zdravljenja<small>ena na ena</small></span><span class="wp-price">100 €</span></div>
+            <div class="wp-ev"><span class="wt">19h</span><span class="wd" data-lang="en">Traditional sacred circle &amp; concert<small>Huni Kuin</small></span><span class="wd" data-lang="pt">Círculo sagrado tradicional &amp; concerto<small>Huni Kuin</small></span><span class="wd" data-lang="sl">Tradicionalni sveti krog &amp; koncert<small>Huni Kuin</small></span><span class="wp-price">40 €</span></div>
+          </div>
+        </div>
+
+        <div class="wp-day">
+          <div class="wp-daylabel"><div><span class="dn" data-lang="en">Thursday</span><span class="dn" data-lang="pt">Quinta</span><span class="dn" data-lang="sl">Četrtek</span></div><span class="di"><svg viewBox="0 0 24 24"><path d="M12 21c5-3 8-7 8-12a4 4 0 0 0-8 0 4 4 0 0 0-8 0c0 5 3 9 8 12z"/></svg></span></div>
+          <div class="wp-events">
+            <div class="wp-ev"><span class="wt">10—14h</span><span class="wd" data-lang="en">Individual healings<small>one-on-one</small></span><span class="wd" data-lang="pt">Curas individuais<small>atendimento pessoal</small></span><span class="wd" data-lang="sl">Individualna zdravljenja<small>ena na ena</small></span><span class="wp-price">100 €</span></div>
+          </div>
+        </div>
+
+        <div class="wp-day">
+          <div class="wp-daylabel"><div><span class="dn" data-lang="en">Friday</span><span class="dn" data-lang="pt">Sexta</span><span class="dn" data-lang="sl">Petek</span></div><span class="di"><svg viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg></span></div>
+          <div class="wp-events">
+            <div class="wp-ev"><span class="wt" data-lang="en">Night</span><span class="wt" data-lang="pt">Noite</span><span class="wt" data-lang="sl">Noč</span><span class="wd" data-lang="en">Prayer ceremonies until sunrise<small>all night</small></span><span class="wd" data-lang="pt">Cerimônias de oração até o amanhecer<small>a noite toda</small></span><span class="wd" data-lang="sl">Molitveni obredi do sončnega vzhoda<small>vso noč</small></span><span class="wp-price">200 €</span></div>
+          </div>
+        </div>
+
+        <div class="wp-day">
+          <div class="wp-daylabel"><div><span class="dn" data-lang="en">Saturday</span><span class="dn" data-lang="pt">Sábado</span><span class="dn" data-lang="sl">Sobota</span></div><span class="di"><svg viewBox="0 0 24 24"><path d="M4 12h1M8 7v10M12 4v16M16 7v10M20 12h-1"/></svg></span></div>
+          <div class="wp-events">
+            <div class="wp-ev"><span class="wt">16h</span><span class="wd" data-lang="en">Hampaya — traditional voice opening<small>ceremony</small></span><span class="wd" data-lang="pt">Hampaya — abertura tradicional da voz<small>cerimônia</small></span><span class="wd" data-lang="sl">Hampaya — tradicionalno odpiranje glasu<small>obred</small></span><span class="wp-price">40 €</span></div>
+            <div class="wp-ev"><span class="wt" data-lang="en">Night</span><span class="wt" data-lang="pt">Noite</span><span class="wt" data-lang="sl">Noč</span><span class="wd" data-lang="en">Prayer ceremonies<small>all night</small></span><span class="wd" data-lang="pt">Cerimônias de oração<small>a noite toda</small></span><span class="wd" data-lang="sl">Molitveni obredi<small>vso noč</small></span><span class="wp-price">200 €</span></div>
+          </div>
+        </div>
+
+        <div class="wp-day">
+          <div class="wp-daylabel"><div><span class="dn" data-lang="en">Sunday</span><span class="dn" data-lang="pt">Domingo</span><span class="dn" data-lang="sl">Nedelja</span></div><span class="di"><svg viewBox="0 0 24 24"><path d="M12 3c3 4 5.5 7 5.5 10.5a5.5 5.5 0 0 1-11 0C6.5 10 9 7 12 3z"/></svg></span></div>
+          <div class="wp-events">
+            <div class="wp-ev"><span class="wt" data-lang="en">Morning</span><span class="wt" data-lang="pt">Manhã</span><span class="wt" data-lang="sl">Jutro</span><span class="wd" data-lang="en">Kambô frog purification<small>closing</small></span><span class="wd" data-lang="pt">Purificação com a rã Kambô<small>encerramento</small></span><span class="wd" data-lang="sl">Očiščenje z žabo Kambô<small>zaključek</small></span><span class="wp-price">100 €</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wp-total">
+        <span class="lbl" data-lang="en">The whole retreat</span><span class="lbl" data-lang="pt">O retiro completo</span><span class="lbl" data-lang="sl">Celoten umik</span>
+        <span class="amt">700 €</span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -1005,8 +1092,8 @@
     <span class="kicker" data-lang="en">03 · The gatherings</span>
     <span class="kicker" data-lang="pt">03 · Os encontros</span>
     <span class="kicker" data-lang="sl">03 · Srečanja</span>
-    <h2 data-lang="en">The <em>rituals</em> you may join</h2>
-    <h2 data-lang="pt">Os <em>rituais</em> dos quais você pode participar</h2>
+    <h2 data-lang="en">The <em>ceremonies</em> you may join</h2>
+    <h2 data-lang="pt">As <em>cerimônias</em> das quais você pode participar</h2>
     <h2 data-lang="sl"><em>Obredi</em>, ki se jim lahko pridružiš</h2>
   </div>
 
@@ -1230,9 +1317,9 @@
     <div class="kicker" data-lang="en">Our story · a movement</div>
     <div class="kicker" data-lang="pt">Nossa história · um movimento</div>
     <div class="kicker" data-lang="sl">Naša zgodba · gibanje</div>
-    <h2 data-lang="en">Sacred Touch Travels — <em>the initiator</em>, Mojca</h2>
-    <h2 data-lang="pt">Sacred Touch Travels — <em>a iniciadora</em>, Mojca</h2>
-    <h2 data-lang="sl">Sacred Touch Travels — <em>pobudnica</em>, Mojca</h2>
+    <h2 data-lang="en">Sacred Touch Travels — <em>the writer</em>, Mojca</h2>
+    <h2 data-lang="pt">Sacred Touch Travels — <em>a escritora</em>, Mojca</h2>
+    <h2 data-lang="sl">Sacred Touch Travels — <em>pisateljica</em>, Mojca</h2>
 
     <p data-lang="en">Sacred Touch Travels was created and nourished by <strong>Mojca</strong>, a life traveler, academic culturologist, and passionate explorer of the different traditions, cultures, arts, and spiritual heritage of Mother Earth. Her journey started with the desire to discover the hidden treasures of human existence — the traditions preserved through generations, the wisdom of indigenous people, and the different ways humanity connects with the invisible worlds.</p>
     <p data-lang="en">Before Sacred Touch Travels, Mojca created <strong>Indijanske novičke</strong>, a space where she shared stories and knowledge about indigenous cultures, especially the world of the Huni Kuin people from the Amazon.</p>
@@ -1527,6 +1614,7 @@
       <p data-lang="en">Sacred chants, forest medicine and living ancestry — woven between the Amazon and Europe.</p>
       <p data-lang="pt">Cantos sagrados, medicina da floresta e ancestralidade viva — tecidos entre a Amazônia e a Europa.</p>
       <p data-lang="sl">Svete pesmi, gozdna medicina in živa dediščina — pretkane med Amazonijo in Evropo.</p>
+      <p class="footer-creed">Sacred prayer circles, forest medicine, worldwide native spiritual trips, Sri Sri Yoga, Art of Living, Meditation, Dance, Music and Vedic Wisdom. You are free right now — an invisible temple in the eternal presence.</p>
     </div>
     <div class="col">
       <h4 data-lang="en">Explore</h4><h4 data-lang="pt">Explorar</h4><h4 data-lang="sl">Razišči</h4>
