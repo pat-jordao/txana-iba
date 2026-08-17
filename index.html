@@ -82,6 +82,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   .hero::after{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(22,39,29,.55),rgba(22,39,29,.78) 60%,var(--jungle))}
   .hero .inner{position:relative;z-index:2;max-width:1100px;margin:0 auto;width:100%;padding:90px 28px;text-align:center}
 
+  /* alliance / prophecy section */
+  .alliance{background:var(--jungle-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:80px 28px}
+  .alliance .aw{max-width:1080px;margin:0 auto}
+  .alliance .kicker{color:var(--ochre);font-family:var(--narrow);font-weight:700;text-transform:uppercase;letter-spacing:.28em;font-size:12px;text-align:center;margin-bottom:18px}
+  .alliance h2{font-family:var(--display);font-weight:400;font-size:clamp(1.9rem,4.4vw,2.8rem);line-height:1.12;text-align:center;max-width:760px;margin:0 auto 14px}
+  .alliance h2 em{font-style:italic;color:var(--clay-bright)}
+  .alliance .lede{max-width:680px;margin:0 auto;text-align:center;color:var(--bone-dim);font-size:1.08rem;line-height:1.62}
+  .alliance .lede strong{color:var(--bone);font-weight:600}
+  .alliance .aphotos{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:44px}
+  .alliance .aphotos figure{margin:0}
+  .alliance .aphotos img{width:100%;aspect-ratio:3/4;object-fit:cover;display:block;border:1px solid var(--line);border-radius:2px}
+  .alliance .aphotos figcaption{margin-top:8px;text-align:center;font-family:var(--narrow);text-transform:uppercase;letter-spacing:.14em;font-size:11px;color:var(--ochre)}
+  @media(max-width:720px){.alliance{padding:56px 20px}.alliance .aphotos{grid-template-columns:1fr;gap:20px;max-width:360px;margin-left:auto;margin-right:auto}.alliance .aphotos img{aspect-ratio:4/3}}
+
   /* flyer band */
   .flyer-band{display:flex;justify-content:center;align-items:flex-start;gap:24px;flex-wrap:wrap;background:var(--jungle-2);border-bottom:1px solid var(--line);padding:48px 28px}
   .flyer-band img{width:100%;max-width:420px;height:auto;display:block;border:1px solid var(--line)}
@@ -948,6 +962,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+<!-- ============ ALLIANCE / PROPHECY ============ -->
+<section class="alliance">
+  <div class="aw">
+    <div class="kicker reveal" data-lang="en">Condor & Eagle</div><div class="kicker reveal" data-lang="pt">Condor e Águia</div><div class="kicker reveal" data-lang="sl">Kondor in Orel</div>
+    <h2 class="reveal" data-lang="en">The Balkan Huni Kuin tour is <em>getting full</em></h2>
+    <h2 class="reveal" data-lang="pt">A turnê Huni Kuin nos Bálcãs está <em>lotando</em></h2>
+    <h2 class="reveal" data-lang="sl">Balkanska turneja Huni Kuin se <em>polni</em></h2>
+
+    <p class="lede reveal" data-lang="en">With brothers and sisters from the Balkan peninsula, we are weaving an alliance between the Balkans, the Amazon and Iran. The prophecy of the Condor and the Eagle is growing in front of our eyes. Three different nations — <strong>Brazil, Slovenia and Iran</strong> — brought together to share joy and celebration with the world. Let's remember together that we are eternal beings, that we are joy and happiness. Welcome to be part of this prophecy.</p>
+    <p class="lede reveal" data-lang="pt">Com irmãos e irmãs da península balcânica, estamos tecendo uma aliança entre os Bálcãs, a Amazônia e o Irã. A profecia do Condor e da Águia cresce diante dos nossos olhos. Três nações diferentes — <strong>Brasil, Eslovênia e Irã</strong> — reunidas para partilhar alegria e celebração com o mundo. Vamos lembrar juntos que somos seres eternos, que somos alegria e felicidade. Seja bem-vindo a fazer parte desta profecia.</p>
+    <p class="lede reveal" data-lang="sl">Z brati in sestrami z Balkanskega polotoka tkemo zavezništvo med Balkanom, Amazonijo in Iranom. Prerokba o Kondorju in Orlu raste pred našimi očmi. Tri različni narodi — <strong>Brazilija, Slovenija in Iran</strong> — združeni, da svetu delijo veselje in praznovanje. Spomnimo se skupaj, da smo večna bitja, da smo veselje in sreča. Dobrodošli, da postanete del te prerokbe.</p>
+
+    <div class="aphotos reveal">
+      <figure><img loading="lazy" src="alliance-mojca.jpg" alt="Sister from the Balkan alliance"></figure>
+      <figure><img loading="lazy" src="alliance-iba.jpg" alt="Huni Kuin ceremonial leader with feather headdress"></figure>
+      <figure><img loading="lazy" src="alliance-pat.jpg" alt="Musician playing sacred song with feathers and drum"></figure>
+    </div>
+  </div>
+</section>
+
 <!-- ============ MESSAGE FROM IBÃ ============ -->
 <section class="messenger" id="message">
   <div class="bio-intro reveal">
@@ -1305,7 +1339,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 
-  <!-- Pricing note 
+  <!-- Pricing note -->
   <div class="price-note reveal">
     <p data-lang="en">Prices for the rituals vary by location and group size — get in touch by email and we'll share the details with you.</p>
     <p data-lang="pt">Os valores dos rituais variam conforme o local e o tamanho do grupo — entre em contato por e-mail e enviaremos todos os detalhes.</p>
@@ -1313,7 +1347,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a class="btn btn-primary" href="mailto:sacredtouchtravels@gmail.com?subject=Prices%20for%20the%20rituals">
       <span data-lang="en">Email us for prices</span><span data-lang="pt">Envie um e-mail para saber os valores</span><span data-lang="sl">Pišite nam za cene</span>
     </a>
-  </div> -->
+  </div>
 </section>
 
 <!-- ============ PAST EVENTS PREVIEW ============ -->
